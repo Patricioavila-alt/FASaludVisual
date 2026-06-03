@@ -21,54 +21,85 @@
         </div>
     </nav>
 
-    <!-- Top Banner -->
-    <header class="top-banner" style="background-image: url('assets/main_banner.png');">
-        <div class="banner-content">
-            <h1>TU ALIADO PARA VER MEJOR</h1>
-            <p>CON ESTILO Y PROTECCIÓN.</p>
+    <!-- Banner Carousel -->
+    <div class="banner-carousel" id="bannerCarousel" aria-label="Banners promocionales">
+        <div class="carousel-track" id="carouselTrack">
+            <!-- Slide 1: Lentes Pregraduados con Test de Visión -->
+            <div class="carousel-slide">
+                <a href="#" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                    <img src="assets/banner_pregraduados.png" alt="Catálogo de Lentes Pregraduados con Test de Visión Digital" loading="eager">
+                </a>
+            </div>
+            <!-- Slide 2: Probador Virtual Lentes de Contacto -->
+            <div class="carousel-slide">
+                <a href="#" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                    <img src="assets/banner_contacto.png" alt="Prueba tus Lentes de Contacto Virtualmente" loading="lazy">
+                </a>
+            </div>
+            <!-- Slide 3: Probador Virtual Lentes de Sol -->
+            <div class="carousel-slide">
+                <a href="#" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                    <img src="assets/banner_sol.png" alt="Prueba tus Lentes Virtualmente y Ahorra con Estilo" loading="lazy">
+                </a>
+            </div>
         </div>
-    </header>
+
+        <!-- Arrows -->
+        <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Banner anterior">&#8249;</button>
+        <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Banner siguiente">&#8250;</button>
+
+        <!-- Dots -->
+        <div class="carousel-dots" role="tablist" id="carouselDots">
+            <button class="dot active" role="tab" aria-label="Banner 1" aria-selected="true"></button>
+            <button class="dot" role="tab" aria-label="Banner 2" aria-selected="false"></button>
+            <button class="dot" role="tab" aria-label="Banner 3" aria-selected="false"></button>
+        </div>
+    </div>
 
     <div class="container">
         <!-- Categories -->
         <div class="section-title text-brand" style="margin-top: 2rem;">Categorías</div>
         <section class="categories-grid">
-            <a href="https://www.fahorro.com/optica/lentes-de-lectura.html" target="_blank" rel="noopener noreferrer"
-                class="category-item">
+            <!-- URL pendiente: Oftalmología -->
+            <a href="#" class="category-item">
                 <div class="icon-wrapper">
                     <div class="leaf-badge"></div>
-                    <img src="assets/glasses.png" alt="Lentes" class="cat-icon" loading="lazy">
+                    <svg class="cat-icon svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" width="40" height="40">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
                 </div>
-                <span>Lentes de<br>Armazón</span>
+                <span>Oftalmología</span>
+            </a>
+            <!-- URL pendiente: Oftalmología RX -->
+            <a href="#" class="category-item">
+                <div class="icon-wrapper">
+                    <div class="leaf-badge"></div>
+                    <svg class="cat-icon svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" width="40" height="40">
+                        <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+                        <rect x="9" y="3" width="6" height="4" rx="2"/>
+                        <path d="M9 14l2 2 4-4"/>
+                    </svg>
+                </div>
+                <span>Oftalmología<br>RX</span>
             </a>
             <a href="https://www.fahorro.com/optica/lentes-de-contacto.html" target="_blank" rel="noopener noreferrer"
                 class="category-item">
                 <div class="icon-wrapper">
                     <div class="leaf-badge"></div>
-                    <img src="assets/contacts.png" alt="Contacto" class="cat-icon" loading="lazy">
+                    <img src="assets/contacts.png" alt="Lentes de contacto" class="cat-icon" loading="lazy">
                 </div>
                 <span>Lentes de<br>Contacto</span>
             </a>
-            <a href="https://www.fahorro.com/search/result/?q=gotas+para+los+ojos" target="_blank"
-                rel="noopener noreferrer" class="category-item">
-                <div class="icon-wrapper">
-                    <div class="leaf-badge"></div>
-                    <img src="assets/eyedrops.png" alt="Gotas" class="cat-icon" loading="lazy">
-                </div>
-                <span>Gotas<br>Humectantes</span>
-            </a>
-            <a href="https://www.fahorro.com/optica/lentes-de-luz-azul.html" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.fahorro.com/optica/lentes-de-lectura.html" target="_blank" rel="noopener noreferrer"
                 class="category-item">
                 <div class="icon-wrapper">
                     <div class="leaf-badge"></div>
-                    <svg class="cat-icon svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" width="40" height="40">
-                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path
-                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
+                    <img src="assets/glasses.png" alt="Lentes pregraduados" class="cat-icon" loading="lazy">
                 </div>
-                <span>Visión<br>Sana</span>
+                <span>Lentes<br>Pregraduados</span>
             </a>
             <a href="https://www.fahorro.com/optica/lentes-de-sol.html" target="_blank" rel="noopener noreferrer"
                 class="category-item">
@@ -76,76 +107,248 @@
                     <div class="leaf-badge"></div>
                     <svg class="cat-icon svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                         stroke-width="2" width="40" height="40">
-                        <circle cx="12" cy="12" r="10" />
-                        <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-                        <line x1="9" y1="9" x2="9.01" y2="9" />
-                        <line x1="15" y1="9" x2="15.01" y2="9" />
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
                     </svg>
                 </div>
-                <span>Lentes<br>Solares</span>
+                <span>Lentes<br>Sol</span>
+            </a>
+            <!-- URL pendiente: Soluciones Ópticas -->
+            <a href="#" class="category-item">
+                <div class="icon-wrapper">
+                    <div class="leaf-badge"></div>
+                    <img src="assets/eyedrops.png" alt="Soluciones ópticas" class="cat-icon" loading="lazy">
+                </div>
+                <span>Soluciones<br>Ópticas</span>
             </a>
         </section>
 
-        <!-- Promo + Info Visual Section -->
-        <div class="promos-header">
-            <div class="section-title text-brand text-left">Descubre las promociones del mes</div>
-            <div class="section-title text-brand text-left hidden-mobile">Información Visual</div>
-        </div>
+        <!-- ══ Pagebuilder: Promo + Carrusel de Productos ══════════════════ -->
+        <div class="pagebuilder-column-line">
 
-        <section class="promos-container">
-            <!-- Big Promo Card (LEFT — sin cambios) -->
-            <div class="promo-card big-promo">
-                <div class="promo-text">
-                    <h2>DESCUBRE<br>LAS PROMOCIONES<br>ESPECIALES PARA<br>TU BIENESTAR</h2>
-                    <a href="https://www.fahorro.com/optica.html?filter=facetHasPromotionSku%3Atrue%3APromociones" target="_blank" rel="noopener noreferrer" class="btn-link">Ver más</a>
-                </div>
-                <div class="promo-image-wrapper">
-                    <div class="green-ring"></div>
-                    <img src="assets/promo_banner.png" alt="Promoción" class="promo-img">
+            <!-- Columna Izquierda (56.25%) — Tarjeta Promo -->
+            <div class="pagebuilder-column column-left">
+                <div class="section-title text-brand text-left" style="margin-bottom: 1rem;">Descubre las promociones del mes</div>
+                <div class="promo-card big-promo">
+                    <div class="promo-text">
+                        <h2>DESCUBRE<br>LAS PROMOCIONES<br>ESPECIALES PARA<br>TU BIENESTAR</h2>
+                        <a href="https://www.fahorro.com/promociones" target="_blank" rel="noopener noreferrer" class="btn-link">Folleto del mes</a>
+                    </div>
+                    <div class="promo-image-wrapper">
+                        <div class="green-ring"></div>
+                        <img src="assets/promo_banner.png" alt="Promoción" class="promo-img">
+                    </div>
                 </div>
             </div>
 
-            <!-- RIGHT: Información Visual -->
-            <div class="info-panel hidden-mobile">
-                <article class="article-card ac-blue">
-                    <div class="ac-badge">👁️ Hábitos</div>
-                    <div class="ac-body">
-                        <h3 class="ac-title">Regla 20-20-20: descansa tus ojos frente a la pantalla</h3>
-                        <p class="ac-desc">Cada 20 min de pantalla, enfoca un objeto a 6 m durante 20 seg. Reduce la fatiga visual digital.</p>
-                        <a href="https://www.aao.org/eye-health/tips-prevention/computer-usage" target="_blank" rel="noopener noreferrer" class="ac-link">
-                            Leer artículo
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </a>
-                    </div>
-                </article>
-                <article class="article-card ac-cream">
-                    <div class="ac-badge">☀️ Protección</div>
-                    <div class="ac-body">
-                        <h3 class="ac-title">¿Por qué usar lentes solares todo el año?</h3>
-                        <p class="ac-desc">La radiación UVA y UVB daña la córnea incluso en días nublados. Lentes con 99–100 % UV previenen cataratas.</p>
-                        <a href="https://www.nei.nih.gov/learn-about-eye-health/healthy-vision/keep-your-eyes-healthy" target="_blank" rel="noopener noreferrer" class="ac-link">
-                            Leer artículo
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </a>
-                    </div>
-                </article>
-                <article class="article-card ac-red">
-                    <div class="ac-badge">🥦 Nutrición</div>
-                    <div class="ac-body">
-                        <h3 class="ac-title">Alimentos que protegen tu salud ocular</h3>
-                        <p class="ac-desc">Luteína, zeaxantina y omega-3 son clave para la retina. Pres. en espinacas, salmón y nueces.</p>
-                        <a href="https://medlineplus.gov/ency/article/002096.htm" target="_blank" rel="noopener noreferrer" class="ac-link">
-                            Leer artículo
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
+            <!-- Columna Derecha (43.75%) — Carrusel de Productos -->
+            <div class="pagebuilder-column column-right hidden-mobile">
+                <div class="header-info">
+                    <div class="section-title text-brand text-left" style="margin-bottom: 1rem;">Productos Destacados</div>
+                </div>
+                <div class="product-half-column-slick">
+                    <!-- Carrusel de Productos Destacados -->
+                    <div class="product-carousel fda-slick-gallery" id="productCarousel" aria-label="Productos destacados">
+                        <!-- Flechas de navegación -->
+                        <button class="pcar-btn pcar-prev" id="productCarouselPrev" aria-label="Producto anterior">&#8249;</button>
+                        <button class="pcar-btn pcar-next" id="productCarouselNext" aria-label="Producto siguiente">&#8250;</button>
 
-        <!-- Quick Articles / Cards dynamically rendered -->
+                        <!-- Track deslizable -->
+                        <div class="pcar-track" id="productCarouselTrack">
+
+                            <!-- Producto 1 -->
+                            <div class="product-item-info">
+                                <a href="#" class="product-item-photo"><img src="assets/promo_banner.png" alt="Lentes Pregraduados Vision Plus" loading="lazy"></a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">Lentes Pregraduados Vision Plus</strong>
+                                    <p class="product-details-opts">Exclusivo en línea</p>
+                                    <div class="price-box">
+                                        <div class="price-main"><span class="price-integer">$299</span><span class="price-decimal">.00 MXN</span></div>
+                                        <div class="price-msi"><span class="msi-amount">$99.67</span><span class="msi-label">× 3 meses sin intereses</span></div>
+                                    </div>
+                                    <button class="action tocart" id="btn-pcar-1">Agregar al carrito</button>
+                                </div>
+                            </div>
+
+                            <!-- Producto 2 -->
+                            <div class="product-item-info">
+                                <a href="#" class="product-item-photo"><img src="assets/contacts.png" alt="Lentes de Contacto Air Optix" loading="lazy"></a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">Lentes de Contacto Air Optix Aqua</strong>
+                                    <p class="product-details-opts">Exclusivo en línea</p>
+                                    <div class="price-box">
+                                        <div class="price-main"><span class="price-integer">$549</span><span class="price-decimal">.00 MXN</span></div>
+                                        <div class="price-msi"><span class="msi-amount">$183.00</span><span class="msi-label">× 3 meses sin intereses</span></div>
+                                    </div>
+                                    <button class="action tocart" id="btn-pcar-2">Agregar al carrito</button>
+                                </div>
+                            </div>
+
+                            <!-- Producto 3 -->
+                            <div class="product-item-info">
+                                <a href="#" class="product-item-photo"><img src="assets/eyedrops.png" alt="Gotas Lubricantes Systane Ultra" loading="lazy"></a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">Gotas Lubricantes Systane Ultra 10ml</strong>
+                                    <p class="product-details-opts">Exclusivo en línea</p>
+                                    <div class="price-box">
+                                        <div class="price-main"><span class="price-integer">$189</span><span class="price-decimal">.00 MXN</span></div>
+                                        <div class="price-msi"><span class="msi-amount">$63.00</span><span class="msi-label">× 3 meses sin intereses</span></div>
+                                    </div>
+                                    <button class="action tocart" id="btn-pcar-3">Agregar al carrito</button>
+                                </div>
+                            </div>
+
+                            <!-- Producto 4 -->
+                            <div class="product-item-info">
+                                <a href="#" class="product-item-photo"><img src="assets/glasses.png" alt="Armazón Óptico Titanio" loading="lazy"></a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">Armazón Óptico Titanio Negro Mate</strong>
+                                    <p class="product-details-opts">Exclusivo en línea</p>
+                                    <div class="price-box">
+                                        <div class="price-main"><span class="price-integer">$799</span><span class="price-decimal">.00 MXN</span></div>
+                                        <div class="price-msi"><span class="msi-amount">$266.33</span><span class="msi-label">× 3 meses sin intereses</span></div>
+                                    </div>
+                                    <button class="action tocart" id="btn-pcar-4">Agregar al carrito</button>
+                                </div>
+                            </div>
+
+                            <!-- Producto 5 -->
+                            <div class="product-item-info">
+                                <a href="#" class="product-item-photo"><img src="assets/contacts.png" alt="Solución Multiusos Opti-Free" loading="lazy"></a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">Solución Multiusos Opti-Free Pure Moist 300ml</strong>
+                                    <p class="product-details-opts">Exclusivo en línea</p>
+                                    <div class="price-box">
+                                        <div class="price-main"><span class="price-integer">$349</span><span class="price-decimal">.00 MXN</span></div>
+                                        <div class="price-msi"><span class="msi-amount">$116.33</span><span class="msi-label">× 3 meses sin intereses</span></div>
+                                    </div>
+                                    <button class="action tocart" id="btn-pcar-5">Agregar al carrito</button>
+                                </div>
+                            </div>
+
+                            <!-- Producto 6 -->
+                            <div class="product-item-info">
+                                <a href="#" class="product-item-photo"><img src="assets/eyedrops.png" alt="Gotas Nazil Pixel" loading="lazy"></a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">Gotas Oftálmicas Nazil Pixel 5ml</strong>
+                                    <p class="product-details-opts">Exclusivo en línea</p>
+                                    <div class="price-box">
+                                        <div class="price-main"><span class="price-integer">$149</span><span class="price-decimal">.00 MXN</span></div>
+                                        <div class="price-msi"><span class="msi-amount">$49.67</span><span class="msi-label">× 3 meses sin intereses</span></div>
+                                    </div>
+                                    <button class="action tocart" id="btn-pcar-6">Agregar al carrito</button>
+                                </div>
+                            </div>
+
+                            <!-- Producto 7 -->
+                            <div class="product-item-info">
+                                <a href="#" class="product-item-photo"><img src="assets/glasses.png" alt="Lentes de Sol Polarizados" loading="lazy"></a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">Lentes de Sol Polarizados UV400</strong>
+                                    <p class="product-details-opts">Exclusivo en línea</p>
+                                    <div class="price-box">
+                                        <div class="price-main"><span class="price-integer">$459</span><span class="price-decimal">.00 MXN</span></div>
+                                        <div class="price-msi"><span class="msi-amount">$153.00</span><span class="msi-label">× 3 meses sin intereses</span></div>
+                                    </div>
+                                    <button class="action tocart" id="btn-pcar-7">Agregar al carrito</button>
+                                </div>
+                            </div>
+
+                            <!-- Producto 8 -->
+                            <div class="product-item-info">
+                                <a href="#" class="product-item-photo"><img src="assets/promo_banner.png" alt="Estuche de Lentes Premium" loading="lazy"></a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">Estuche Rígido para Lentes Premium</strong>
+                                    <p class="product-details-opts">Exclusivo en línea</p>
+                                    <div class="price-box">
+                                        <div class="price-main"><span class="price-integer">$129</span><span class="price-decimal">.00 MXN</span></div>
+                                        <div class="price-msi"><span class="msi-amount">$43.00</span><span class="msi-label">× 3 meses sin intereses</span></div>
+                                    </div>
+                                    <button class="action tocart" id="btn-pcar-8">Agregar al carrito</button>
+                                </div>
+                            </div>
+
+                        </div><!-- /pcar-track -->
+
+                        <!-- Dots de navegación (generados por JS) -->
+                        <ul class="slick-dots" id="productCarouselDots" role="tablist"></ul>
+
+                    </div><!-- /product-carousel -->
+                </div><!-- /product-half-column-slick -->
+
+
+
+            </div><!-- /column-right -->
+
+        </div><!-- /pagebuilder-column-line -->
+
+
+
+        <!-- Nuevos Lanzamientos -->
+        <div class="section-title text-brand" style="margin-bottom: 1.5rem;">¡Nuevos lanzamientos!</div>
         <section class="quick-cards-grid" id="quick-cards-container">
             <!-- Rendered by JS -->
+        </section>
+
+        <!-- Artículos y Noticias -->
+        <section class="custom-section">
+            <div class="container-inner">
+                <!-- Título de la sección -->
+                <div class="section-title">
+                    <h2>Conoce los últimos artículos y noticias</h2>
+                </div>
+                
+                <!-- Grupo de columnas -->
+                <div class="column-group">
+                    <div class="column">
+                        <figure>
+                            <img src="assets/promo_banner.png" alt="Cuidado de ojos" loading="lazy">
+                        </figure>
+                        <article class="article-card ac-blue">
+                            <div class="ac-body">
+                                <h3 class="ac-title">Cómo cuidar tus ojos de las pantallas | ABBVIE</h3>
+                                <p class="ac-desc">¿Pasas horas frente a la computadora, tablet o celular? El uso prolongado de dispositivos digitales reduce drásticamente nuestro parpadeo, lo que provoca fatiga visual y el molesto síndrome de ojo seco. Descubre qué es la famosa regla "20-20-20" y los mejores hábitos diarios para mantener tu mirada fresca, hidratada y protegida durante toda tu jornada.</p>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="ac-link">
+                                    Ver más
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="column">
+                        <figure>
+                            <img src="assets/contacts.png" alt="Lentes de contacto" loading="lazy">
+                        </figure>
+                        <article class="article-card ac-cream">
+                            <div class="ac-body">
+                                <h3 class="ac-title">Lentes de contacto: Uso y cuidados esenciales | ALCON</h3>
+                                <p class="ac-desc">Tus lentes de contacto son una excelente herramienta visual, pero requieren una rutina de higiene estricta para evitar infecciones o úlceras corneales. Aprende paso a paso cómo manipularlos correctamente, por qué el agua del grifo es tu peor enemiga y el tiempo exacto en el que debes reemplazar tanto tus lentes como el estuche. ¡Mantén tus ojos a salvo!</p>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="ac-link">
+                                    Ver más
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="column">
+                        <figure>
+                            <img src="assets/eyedrops.png" alt="Ojo rojo" loading="lazy">
+                        </figure>
+                        <article class="article-card ac-red">
+                            <div class="ac-body">
+                                <h3 class="ac-title">Ojo rojo: Prevención y tratamiento efectivo | SOPHIA</h3>
+                                <p class="ac-desc">La contaminación, las alergias, el humo o las largas noches de desvelo pueden causar irritación y enrojecimiento ocular (hiperemia). Conoce las medidas preventivas más eficaces para el día a día y descubre las opciones de alivio rápido y seguro para desinflamar y lubricar tus ojos, devolviéndoles su aspecto blanco y saludable.</p>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="ac-link">
+                                    Ver más
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
