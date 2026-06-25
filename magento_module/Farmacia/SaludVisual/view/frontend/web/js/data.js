@@ -163,6 +163,7 @@ function initCarousel() {
     }
 
     function startAutoplay() {
+        clearInterval(autoplayTimer);
         autoplayTimer = setInterval(() => goTo(current + 1), INTERVAL);
     }
 
