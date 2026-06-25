@@ -151,7 +151,7 @@ function initCarousel() {
     const total       = dots.length;
     let current       = 0;
     let autoplayTimer = null;
-    const INTERVAL    = 5000;
+    const INTERVAL    = 8000;
 
     function goTo(index) {
         current = (index + total) % total;
